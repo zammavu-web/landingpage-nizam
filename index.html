@@ -96,7 +96,46 @@
             </div>
 
             <section id="connect" class="contact-field">
-                <p class="contact-invite" data-reveal>Lagi eksplorasi AI juga? Yuk connect — saya terbuka untuk kolaborasi project atau sekadar ngobrol soal tech.</p>
+                <p class="contact-invite" data-reveal>Lagi eksplorasi AI juga? Yuk connect! saya terbuka untuk kolaborasi project atau sekadar ngobrol soal tech.</p>
+                
+                <form class="contact-form" data-reveal>
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input 
+                            type="text" 
+                            id="nama" 
+                            name="nama" 
+                            required 
+                            minlength="3"
+                            placeholder="Nama lengkap kamu"
+                            autocomplete="name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required
+                            placeholder="email@contoh.com"
+                            autocomplete="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea 
+                            id="pesan" 
+                            name="pesan" 
+                            rows="4" 
+                            required 
+                            minlength="10"
+                            placeholder="Ceritakan tentang project atau ide kolaborasi kamu..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="form-submit">Kirim Pesan</button>
+                </form>
+                
                 <nav class="contact-links" aria-label="Media sosial" data-reveal>
                     <a href="https://github.com/zammavu-web">GitHub</a>
                     <a href="https://instagram.com/nizamdisini_">Instagram</a>

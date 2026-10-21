@@ -472,6 +472,76 @@ a {
     max-width: 32ch;
 }
 
+.contact-form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: 500;
+    font-size: var(--step-body);
+}
+
+.form-group input,
+.form-group textarea {
+    font-family: var(--font-text);
+    font-size: var(--step-body);
+    padding: 12px 16px;
+    border: 2px solid rgba(26, 32, 44, 0.15);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.6);
+    color: var(--ink);
+    transition: all 0.25s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--field-1-ink);
+    background: rgba(255, 255, 255, 0.9);
+    outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--muted);
+    opacity: 0.7;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-submit {
+    font-family: var(--font-text);
+    font-size: var(--step-body);
+    font-weight: 500;
+    padding: 14px 32px;
+    border: none;
+    border-radius: var(--radius-pill);
+    background: var(--ink);
+    color: var(--bg);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    align-self: center;
+}
+
+.form-submit:hover {
+    background: var(--field-1-ink);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26, 32, 44, 0.2);
+}
+
 .contact-links {
     display: flex;
     gap: 44px;

@@ -56,3 +56,11 @@ const photoObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('[data-photo-target]').forEach((section) => {
     photoObserver.observe(section);
 });
+
+// Form handler: prevent reload, show confirmation.
+document.querySelector('.contact-form')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const nama = e.target.nama.value;
+    alert(`Terima kasih ${nama}! Pesan kamu sudah diterima.`);
+    e.target.reset();
+});
